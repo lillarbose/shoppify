@@ -1,0 +1,23 @@
+.about-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+.about-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+.about-social-link:hover {
+  transform: scale(1.15) rotate(-6deg);
+  filter: brightness(1.1) drop-shadow(0 2px 8px #ff512f33);
+}
+.about-social-link img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Add any additional About page styles below */
