@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const Login = () => {
   const [email, setEmail] = useState("")
@@ -84,8 +85,7 @@ const Login = () => {
                 fontWeight: 600,
                 cursor: "pointer"
               }}
-              tabIndex={-1}
-            >
+              tabIndex={-1}>
               {showPassword ? "Hide" : "Show"}
             </button>
           </div>
@@ -107,7 +107,7 @@ const Login = () => {
           >Sign-In</button>
         </form>
         <div style={{marginTop: "1.5rem", fontSize: "0.98rem", color: "#555", textAlign: "center"}}>
-          By continuing, you agree to Lizz's <a href="#" style={{color: "#ff512f", textDecoration: "underline"}}>Conditions of Use</a> and <a href="#" style={{color: "#ff512f", textDecoration: "underline"}}>Privacy Notice</a>.
+          By continuing, you agree to Lizz's <Link style={{color: "#ff512f", textDecoration: "underline"}}>Conditions of Use</Link> and <Link style={{color: "#ff512f", textDecoration: "underline"}}>Privacy Notice</Link>.
         </div>
         <div style={{marginTop: "2rem", textAlign: "center"}}>
           <span style={{color: "#888"}}>New to Lizz?</span>
