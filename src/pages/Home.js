@@ -217,10 +217,7 @@ const Home = () => {
     navigate("/cart")
   }
 
-  const openPopup = idx => {
-    setPopupIdx(idx)
-    setShowPopup(true)
-  }
+ 
   const closePopup = () => setShowPopup(false)
 
   return (
